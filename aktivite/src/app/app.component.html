@@ -1,0 +1,31 @@
+
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+
+</style>
+
+<table style="width:30%">
+
+<tr><th colspan="2">{{tittle}}</th></tr>
+<tr>
+  <th>First name:</th>
+  <th><input [(ngModel)]="birimfiyat.miktar" placeholder="miktar"></th>
+  </tr>
+<tr>
+  <th>Last name:</th>
+  <th><input [(ngModel)]="birimfiyat.fiyat" placeholder="fiyat"></th>
+</tr>
+<tr>
+  <th><button (click)="submit()">Hesapla</button></th>
+  <th><h1></h1></th>
+  
+</tr>
+</table>
